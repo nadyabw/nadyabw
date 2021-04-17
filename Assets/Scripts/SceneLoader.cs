@@ -3,22 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneLoader : MonoBehaviour
+public static class SceneLoader
 {
-
     #region Public metods
     
-    public void ChangeScene(string sceneName)
+    public static void ChangeScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
     }
     
-    public void ChangeScene(int sceneInsex)
+    public static void ChangeScene(int sceneInsex)
     {
         SceneManager.LoadScene(sceneInsex);
     }
 
-    public void ExitGame()
+    public static void ExitGame()
     {
         Application.Quit();
     }
